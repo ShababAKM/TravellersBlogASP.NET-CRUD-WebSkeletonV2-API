@@ -1,0 +1,16 @@
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\bin\Debug\TDrepository.dll
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\bin\Debug\TDrepository.pdb
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\bin\Debug\EntityFramework.dll
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\bin\Debug\EntityFramework.SqlServer.dll
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\bin\Debug\TDdata.dll
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\bin\Debug\TDentity.dll
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\bin\Debug\TDinterface.dll
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\bin\Debug\TDdata.pdb
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\bin\Debug\TDentity.pdb
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\bin\Debug\TDinterface.pdb
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\bin\Debug\EntityFramework.xml
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\bin\Debug\EntityFramework.SqlServer.xml
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\obj\Debug\TDrepository.csprojResolveAssemblyReference.cache
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\obj\Debug\TDrepository.csproj.CoreCompileInputs.cache
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\obj\Debug\TDrepository.dll
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDrepository\obj\Debug\TDrepository.pdb

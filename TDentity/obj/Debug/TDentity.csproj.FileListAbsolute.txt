@@ -1,0 +1,6 @@
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDentity\bin\Debug\TDentity.dll
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDentity\bin\Debug\TDentity.pdb
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDentity\obj\Debug\TDentity.csprojResolveAssemblyReference.cache
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDentity\obj\Debug\TDentity.csproj.CoreCompileInputs.cache
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDentity\obj\Debug\TDentity.dll
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDentity\obj\Debug\TDentity.pdb
