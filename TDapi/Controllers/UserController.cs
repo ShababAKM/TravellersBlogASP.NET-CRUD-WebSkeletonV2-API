@@ -19,16 +19,17 @@ namespace TDapi.Controllers
             this.repo = repo;
         }
 
-        [Route("")]
+        [HttpGet][Route("")]
         public IHttpActionResult Get()
         {
             return Ok(repo.GetAll());
         }
-        public IHttpActionResult Post(Users user)
+        [Route("")][HttpPost]
+        public IHttpActionResult Insert(Users user)
         {
             repo.Insert(user);
-            string url = Url.Link("GetProduct", new { id = user.Id });
-            return Created(url, user);
+            //string url = /*Url.Link("getUser", new { id = user.Id })*/Url.Link("getUser", new { id = user.Id });
+            return Created("", user);
         }
     }
 }
