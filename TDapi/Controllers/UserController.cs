@@ -28,8 +28,30 @@ namespace TDapi.Controllers
         public IHttpActionResult Insert(Users user)
         {
             repo.Insert(user);
-            //string url = /*Url.Link("getUser", new { id = user.Id })*/Url.Link("getUser", new { id = user.Id });
-            return Created("", user);
+            return Ok(user);
+        }
+        [Route("getUser")][HttpPost]
+        public IHttpActionResult GetU(Users user)
+        {
+            return Ok(repo.GetUser(user.UserName,user.Password));
+        }
+        [Route("{id}/update")]
+        public IHttpActionResult Put([FromBody]Users user, [FromUri]int id)
+        {
+            user.Id = id;
+            repo.Update(user);
+            return Ok(user);
+        }
+        [Route("{id}/delete")][HttpPost]
+        public IHttpActionResult Delete(Users user)
+        {
+            if (repo.GetUser(user.UserName, user.Password) != null)
+            {
+                user = repo.GetUser(user.UserName, user.Password);
+                repo.Delete(user);
+                return Ok(user);
+            }
+            else return StatusCode(HttpStatusCode.NoContent);
         }
     }
 }

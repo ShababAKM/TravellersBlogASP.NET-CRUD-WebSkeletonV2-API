@@ -7,9 +7,9 @@ using TDentity;
 
 namespace TDinterface
 {
-    public interface IUsersRepository:IRepository<Users>
+    public interface IBlogRepository : IRepository<Blogs>
     {
-        List<Users> Search(string keyword);
-        Users GetUser(string uname, string pass);
+        List<Blogs> Search(string keyword);
+        Blogs GetBlog(int id);
     }
 }

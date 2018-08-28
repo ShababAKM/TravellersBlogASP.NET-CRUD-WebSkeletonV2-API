@@ -11,5 +11,6 @@ namespace TDdata
     public class TDDBContext:DbContext
     {
         public DbSet<Users> Users { get; set; }
+        public DbSet<Blogs> Blogs { get; set; }
     }
 }

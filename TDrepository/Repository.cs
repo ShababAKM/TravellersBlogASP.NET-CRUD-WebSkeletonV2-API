@@ -11,7 +11,7 @@ namespace TDrepository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity
     {
-        private TDDBContext context = new TDDBContext();
+        protected TDDBContext context = new TDDBContext();
 
         public TDDBContext Context
         {
@@ -23,11 +23,7 @@ namespace TDrepository
             return this.context.Set<TEntity>().ToList();
         }
 
-        public TEntity Get(int id)
-        {
-            return this.context.Set<TEntity>().Find(id);
-        }
-
+       
         public int Insert(TEntity entity)
         {
             this.context.Set<TEntity>().Add(entity);
@@ -45,5 +41,10 @@ namespace TDrepository
             this.context.Set<TEntity>().Remove(entity);
             return this.context.SaveChanges();
         }
+        public TEntity Get(int id)
+        {
+            return this.context.Set<TEntity>().Find(id);
+        }
+
     }
 }

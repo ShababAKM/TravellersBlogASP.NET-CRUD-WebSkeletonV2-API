@@ -15,5 +15,10 @@ namespace TDrepository
         {
             return null;
         }
+        public Users GetUser(string uname, string pass)
+        {
+            return this.context.Users.SingleOrDefault(a => a.UserName == uname && a.Password == pass);
+        }
     }
+
 }
