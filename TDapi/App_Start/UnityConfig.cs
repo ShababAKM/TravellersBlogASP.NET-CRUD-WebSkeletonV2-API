@@ -16,7 +16,7 @@ namespace TDapi
             // it is NOT necessary to register your controllers
 
             // e.g. container.RegisterType<ITestService, TestService>();
-            container.RegisterType<IUsersRepository, UsersRepository>();
+            container.RegisterType<IUserRepository, UserRepository>();
             container.RegisterType<IBlogRepository, BlogRrepository>();
             container.RegisterType<ICommentRepository, CommentRepository>();
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
