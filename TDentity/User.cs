@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TDentity
 {
-    public class Users : Entity
+    public class User : Entity
     {
         public string UserName { get; set; }
         public string Email { get; set; }

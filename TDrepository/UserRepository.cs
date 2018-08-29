@@ -9,13 +9,14 @@ using TDinterface;
 
 namespace TDrepository
 {
-    public class UsersRepository : Repository<Users>, IUsersRepository
+    public class UserRepository : Repository<User>, IUserRepository
     {
-        public List<Users> Search(string keyword)
+        public List<User> Search(string keyword)
         {
             return null;
         }
-        public Users GetUser(string uname, string pass)
+
+        public User GetUser(string uname, string pass)
         {
             return this.context.Users.SingleOrDefault(a => a.UserName == uname && a.Password == pass);
         }

@@ -10,7 +10,8 @@ namespace TDdata
 {
     public class TDDBContext:DbContext
     {
-        public DbSet<Users> Users { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Admin> Admins { get; set; }
         public DbSet<Blogs> Blogs { get; set; }
     }
 }
