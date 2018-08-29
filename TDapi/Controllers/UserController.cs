@@ -12,9 +12,9 @@ namespace TDapi.Controllers
     [RoutePrefix("api/users")]
     public class UserController : ApiController
     {
-        private IUsersRepository repo;
+        private IUserRepository repo;
 
-        public UserController(IUsersRepository repo)
+        public UserController(IUserRepository repo)
         {
             this.repo = repo;
         }
@@ -24,26 +24,30 @@ namespace TDapi.Controllers
         {
             return Ok(repo.GetAll());
         }
+
         [Route("")][HttpPost]
-        public IHttpActionResult Insert(Users user)
+        public IHttpActionResult Insert(User user)
         {
             repo.Insert(user);
             return Ok(user);
         }
+
         [Route("getUser")][HttpPost]
-        public IHttpActionResult GetU(Users user)
+        public IHttpActionResult GetU(User user)
         {
             return Ok(repo.GetUser(user.UserName,user.Password));
         }
+
         [Route("{id}/update")]
-        public IHttpActionResult Put([FromBody]Users user, [FromUri]int id)
+        public IHttpActionResult Put([FromBody]User user, [FromUri]int id)
         {
             user.Id = id;
             repo.Update(user);
             return Ok(user);
         }
+
         [Route("{id}/delete")][HttpPost]
-        public IHttpActionResult Delete(Users user)
+        public IHttpActionResult Delete(User user)
         {
             if (repo.GetUser(user.UserName, user.Password) != null)
             {
