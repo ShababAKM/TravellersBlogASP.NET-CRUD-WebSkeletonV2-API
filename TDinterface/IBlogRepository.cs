@@ -11,5 +11,6 @@ namespace TDinterface
     {
         List<Blogs> Search(string keyword);
         Blogs GetBlog(int id);
+        List<Blogs> SearchBlog(string searchString);
     }
 }

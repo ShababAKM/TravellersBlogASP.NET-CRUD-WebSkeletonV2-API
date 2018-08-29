@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IBlogRepository.cs" />
+    <Compile Include="ICommentRepository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="IUsersRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

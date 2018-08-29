@@ -11,5 +11,6 @@ namespace TDentity
         public int WriterId { get; set; }
         public string BlogName { get; set; }
         public string Blog { get; set; }
+        public int Rating { get; set; }
     }
 }

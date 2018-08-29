@@ -18,5 +18,9 @@ namespace TDrepository
         {
             return this.context.Blogs.SingleOrDefault(a => a.Id==id);
         }
+        public List<Blogs> SearchBlog(string searchString)
+        {
+            return this.context.Blogs.Where(p => p.BlogName.Contains(searchString)).ToList();
+        }
     }
 }

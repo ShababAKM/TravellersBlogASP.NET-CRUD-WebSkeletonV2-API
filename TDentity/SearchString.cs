@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TDentity
 {
-    public class Comments : Entity
+    public class SearchString
     {
-        public int BlogId { get; set; }
-        public string Comment { get; set; }
+        public string searchString { get; set; }
+        public int rating { get; set; }
     }
 }

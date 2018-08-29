@@ -18,6 +18,7 @@ namespace TDapi
             // e.g. container.RegisterType<ITestService, TestService>();
             container.RegisterType<IUsersRepository, UsersRepository>();
             container.RegisterType<IBlogRepository, BlogRrepository>();
+            container.RegisterType<ICommentRepository, CommentRepository>();
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }
