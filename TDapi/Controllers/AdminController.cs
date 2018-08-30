@@ -56,8 +56,9 @@ namespace TDapi.Controllers
         public IHttpActionResult Insert(Admin admin)
         {
             aRepo.Insert(admin);
-            string url = Url.Link("GetAdmin", new { id = admin.Id });
-            return Created(url, admin);
+            //string url = Url.Link("GetAdmin", new { id = admin.Id });
+            //return Created(url, admin);
+            return Ok(admin);
         }
 
         [Route("{id}")]

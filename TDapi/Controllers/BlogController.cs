@@ -68,5 +68,15 @@ namespace TDapi.Controllers
         {
             return Ok(repo.GetBlog(id));
         }
+        [Route("userBlog/{id}/rate")]
+        public IHttpActionResult Rating([FromBody]Blogs blog,[FromUri]int id)
+        {
+            SearchString ss = new SearchString();
+            ss.rating = blog.Rating;
+            Blogs blog2 = repo.GetBlog(id);
+            blog2.Rating = blog2.Rating + ss.rating;
+            repo.Update(blog2);
+            return Ok(blog);
+        }
     }
 }

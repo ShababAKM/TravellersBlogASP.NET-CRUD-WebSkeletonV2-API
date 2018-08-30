@@ -44,3 +44,6 @@ E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog
 E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDapi\obj\Debug\TDapi.csproj.CoreCompileInputs.cache
 E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDapi\obj\Debug\TDapi.dll
 E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDapi\obj\Debug\TDapi.pdb
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDapi\bin\System.Web.Cors.dll
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDapi\bin\System.Web.Http.Cors.dll
+E:\ADVANCED TOPICS IN PROGRAMMING II\ATP2-TravelersBlog Version 2\TravellersBlog\TDapi\bin\System.Web.Http.Cors.xml

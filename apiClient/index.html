@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap-theme.css">
+</head>
+<body ng-app="loginModule" ng-controller="LoginController">
+	
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">YourBlog.com</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li ><a href="#">User Portal</a></li>
+				<li><a href="#">Admin Panel</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container" >
+		
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				
+				<div class="panel panel-info" ng-show="loginVisible">
+					<div class="panel-heading">Login</div>
+					<div class="panel-body">
+						<div class="form-group">
+							<label for="username">USERNAME</label>
+							<input type="text" ng-model="username">
+						</div>
+						<div class="form-group">
+							<label for="password">PASSWORD</label>
+							<input type="text" ng-model="password">
+						</div>
+						<button class="btn btn-primary" ng-click="login()">Login</button>
+					</div>
+				</div>
+				<div class="panel panel-info" ng-show="loginVisible">
+					<div class="panel-heading">Regester</div>
+					<div class="panel-body">
+						<div class="form-group">
+							<label for="username">USERNAME</label>
+							</br>
+							<input type="text" ng-model="username2">
+						</div>
+
+						<div class="form-group">
+							<label for="username">EMAIL</label>
+							</br>
+							<input type="text" ng-model="email">
+						</div>
+						<div class="form-group">
+							<label for="username">PHONE</label>
+							</br>
+							<input type="text" ng-model="phone">
+						</div>
+						<div class="form-group">
+							<label for="password">PASSWORD</label>
+							</br>
+							<input type="text" ng-model="password2">
+						</div>
+						<button class="btn btn-primary" ng-click="register()">Regester</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/angular/angular.js"></script>
+	<script type="text/javascript" src="assets/scripts/myScript1.js"></script>
+</body>
+</html>

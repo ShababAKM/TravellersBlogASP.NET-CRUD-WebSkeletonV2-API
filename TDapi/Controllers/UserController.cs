@@ -35,7 +35,11 @@ namespace TDapi.Controllers
         [Route("getUser")][HttpPost]
         public IHttpActionResult GetU(User user)
         {
-            return Ok(repo.GetUser(user.UserName,user.Password));
+            if (user.UserName != "" && user.Password != "")
+                return Ok(repo.GetUser(user.UserName, user.Password));
+            else if(repo.GetUser(user.UserName, user.Password)==null)
+                return StatusCode(HttpStatusCode.Unauthorized);
+            else return StatusCode(HttpStatusCode.Unauthorized);
         }
 
         [Route("{id}/update")]

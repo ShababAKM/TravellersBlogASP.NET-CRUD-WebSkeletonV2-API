@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap-theme.css">
+	<script type="text/javascript" src="assets/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/angular/angular.js"></script>
+	<script type="text/javascript" src="assets/scripts/myScript1.js"></script>
+</head>
+<body ng-app="loginModule" ng-controller="LoginController">
+	
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">YourBlog.com(User Portal)</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li ><a href="#">Account Settings</a></li>
+				<li><a href="#">Write Blogs</a></li>
+			</ul>
+		</div>
+	</nav>
+<div class="panel panel-info" ng-show="updateVisible">
+					<div class="panel-heading">Update Accpunt</div>
+					<div class="panel-body">
+						<div class="form-group">
+							<label for="username">USERNAME</label>
+							</br>
+							<input type="text" ng-model="username2">
+						</div>
+
+						<div class="form-group">
+							<label for="username">EMAIL</label>
+							</br>
+							<input type="text" ng-model="email">
+						</div>
+						<div class="form-group">
+							<label for="username">PHONE</label>
+							</br>
+							<input type="text" ng-model="phone">
+						</div>
+						<div class="form-group">
+							<label for="password">PASSWORD</label>
+							</br>
+							<input type="text" ng-model="password2">
+						</div>
+						<button class="btn btn-primary" ng-click="register()">Regester</button>
+					</div>
+				</div>
+	<div class="container" >		
+				<div class="panel panel-info" ng-show="homeVisible">
+					<div class="panel-heading">
+						User Info
+						<button class="btn btn-xs btn-primary pull-right"><i class="glyphicon glyphicon-plus"></i> Add New</button>
+						<button class="btn btn-xs btn-default pull-right" style="margin-right: 5px;"><i class="glyphicon glyphicon-refresh"></i> Refresh</button>
+					</div>
+					<div class="panel-body">
+						<table class="table table-striped">
+							<tr>
+								<th>Name</th>
+								<th>Email</th>
+								<th>Phone</th>
+							</tr>
+							<tr >
+								<td>{{user.UserName}}</td>
+								<td>{{user.Email}}</td>
+								<td>{{user.Phone}}</td>
+							</tr>
+						</table>
+					</div>
+				</div>-
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+</html>

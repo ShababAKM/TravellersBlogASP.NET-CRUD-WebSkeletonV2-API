@@ -19,6 +19,7 @@ namespace TDapi
             container.RegisterType<IUserRepository, UserRepository>();
             container.RegisterType<IBlogRepository, BlogRrepository>();
             container.RegisterType<ICommentRepository, CommentRepository>();
+            container.RegisterType<IAdminRepository, AdminRepository>();
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }
